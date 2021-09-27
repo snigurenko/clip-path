@@ -1,0 +1,94 @@
+body {
+  background: #DCF5FF;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  width: 270px;
+  border-radius: 10px;
+}
+
+.container:hover .inner {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background-color: #00B6FF;
+}
+
+.container .inner {
+  background-color: #07daa5;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.container .inner h1 {
+  margin: 0;
+  color: white;
+}
+
+.container .inner p {
+  font-size: 16px;
+  color: white;
+}
+
+.container .inner span {
+  float: right;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  margin-right: 4%;
+  padding-top: 5px;
+}
+
+.container .inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
+.container2 {
+  width: 270px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.container2:hover .inner2 {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+  background-color: #00B6FF;
+}
+
+.container2 .inner2 {
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  -webkit-clip-path: inset(0% 0% 0% 100%);
+          clip-path: inset(0% 0% 0% 100%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.container2 .inner2 h1 {
+  margin: 0;
+  color: white;
+}
+
+.container2 .inner2 p {
+  font-size: 16px;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
